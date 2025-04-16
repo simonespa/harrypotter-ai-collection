@@ -19,7 +19,7 @@ conda activate hp
 Create an empty environment specifying the name and the Python version
 
 ```
-conda create --name hp python=3.12
+conda create --name hp python=3.12 -y
 ```
 
 Activate the environment
@@ -28,16 +28,10 @@ Activate the environment
 conda activate hp
 ```
 
-Add a new channel
-
-```
-conda config --env --add channels conda-forge
-```
-
 Install the dependencies
 
 ```
-conda install anaconda::notebook conda-forge::jupyterlab
+conda install notebook jupyterlab matplotlib -y
 ```
 
 ## Cleanup
@@ -51,5 +45,5 @@ conda deactivate
 Remove the `hp` environment and all its dependencies (if needed)
 
 ```
-conda remove --name hp --all
+conda remove --name hp --all -y
 ```
