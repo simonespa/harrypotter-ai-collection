@@ -2,13 +2,13 @@
 
 ## Automatic Setup
 
-Install the `hp` environment from the `environment` YAML file
+Install the `hp` environment and all its dependencies from the `environment.yaml` config file
 
 ```
 conda env create -f environment.yaml
 ```
 
-Activate the environment
+Activate the `hp` environment
 
 ```
 conda activate hp
@@ -22,7 +22,7 @@ Create an empty environment specifying the name and the Python version
 conda create --name hp python=3.12 -y
 ```
 
-Activate the environment
+Activate the `hp` environment
 
 ```
 conda activate hp
@@ -31,7 +31,7 @@ conda activate hp
 Install the dependencies
 
 ```
-conda install notebook jupyterlab matplotlib -y
+conda install notebook jupyterlab matplotlib seaborn plotly pandas -y
 ```
 
 ## Cleanup
@@ -47,3 +47,6 @@ Remove the `hp` environment and all its dependencies (if needed)
 ```
 conda remove --name hp --all -y
 ```
+
+## Sources
+- Screenplay: https://bulletproofscreenwriting.tv/happy-potter-screenplay-download/
