@@ -31,7 +31,7 @@ conda activate hp
 Install the dependencies
 
 ```
-conda install notebook jupyterlab matplotlib seaborn plotly pandas -y
+conda install notebook jupyterlab -y
 ```
 
 ## Cleanup
@@ -46,6 +46,14 @@ Remove the `hp` environment and all its dependencies (if needed)
 
 ```
 conda remove --name hp --all -y
+```
+
+## Start Coding
+
+Run Jupyter
+
+```
+jupyter lab
 ```
 
 ## Sources
