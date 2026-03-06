@@ -31,7 +31,7 @@ conda activate hp
 Install the dependencies
 
 ```
-conda install notebook jupyterlab conda-forge::spacy anaconda::nltk pytorch::pytorch pytorch::torchvision pytorch::torchaudio conda-forge::tensorflow -y
+conda install notebook jupyterlab spacy nltk tensorflow pytorch::pytorch pytorch::torchvision pytorch::torchaudio pytorch::torchtext transformers -y
 ```
 
 ## Cleanup
